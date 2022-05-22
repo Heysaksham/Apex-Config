@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+# Apex-Config
 
-You can use the [editor on GitHub](https://github.com/Heysaksham/Apex-Config/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Launch Options
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+| **Command**  | **Description** |
 
-**Bold** and _Italic_ and `Code` text
+| ------------- | ------------- |
 
-[Link](url) and ![Image](src)
-```
+| `-dev`  | Skips EA intro on startup  |
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+| `+exec`  | Executes a cfg file on startup  |
 
-### Jekyll Themes
+| `-fullscreen`  | Starts the game in fullscreen mode  |
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Heysaksham/Apex-Config/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+| `+reticle_color R G B`  | Sets a unrestricted RGB value for the reticle color |
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+## Autoexec
+
+1. Go to the games directory. (Usually in C:\Program Files (x86)\Steam\steamapps\common\Apex Legends\cfg)
+
+2. Create there a new file called "autoexec.cfg" (without the Quotation marks)
+
+3. Paste everything from [autoexec](https://raw.githubusercontent.com/Heysaksham/Apex-Config/main/autoexec.cfg) in it.
+
+4. Rightclick on the game inside of Steam and go to "Properties".
+
+5. Add the Launch Option "+exec autoexec.cfg" (without the Quotation marks)
+
+
+
+
+
+## Videoconfig
+
+1. Press Win+R while you are on your desktop.
+
+2. Paste this inside the Run box: "%USERPROFILE%\Saved Games\Respawn\Apex\local" (without the Quotation marks)
+
+3. Open up the Videoconfig.txt with Wordpad or Notepad++.
+
+4. Replace everything in it with the code from [videoconfig](https://raw.githubusercontent.com/Heysaksham/Apex-Config/main/videoconfig.txt)
+
+5. Save and make the file read-only.
+
+
+
+
+
+## Consistant frame caping
+
+Use RTSS for framerate caping over build-in game engines caps. RTSS is the best in frametime consistancy.
+
+Apex Legends and other Soruce Engine games cannot register inputs between frames. The more frames the more often Apex can register inputs.
+
+If your framerate is flactuating your "mouse feeling" will feel off and inconsistent.
+
+You can download RTSS [here](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html)
+
+
+
